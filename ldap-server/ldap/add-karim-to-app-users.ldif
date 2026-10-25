@@ -1,0 +1,4 @@
+dn: cn=APP_USERS,ou=groups,dc=company,dc=com
+changetype: modify
+add: member
+member: uid=karim,ou=users,dc=company,dc=com

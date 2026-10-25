@@ -1,0 +1,33 @@
+dn: ou=users,dc=company,dc=com
+objectClass: organizationalUnit
+ou: users
+
+dn: ou=groups,dc=company,dc=com
+objectClass: organizationalUnit
+ou: groups
+
+dn: uid=karim,ou=users,dc=company,dc=com
+objectClass: inetOrgPerson
+uid: karim
+cn: Karim
+sn: Karim
+mail: karim@company.com
+userPassword: Karim123!
+
+dn: uid=sara,ou=users,dc=company,dc=com
+objectClass: inetOrgPerson
+uid: sara
+cn: Sara
+sn: Sara
+mail: sara@company.com
+userPassword: Sara123!
+
+dn: cn=APP_ADMINS,ou=groups,dc=company,dc=com
+objectClass: groupOfNames
+cn: APP_ADMINS
+member: uid=karim,ou=users,dc=company,dc=com
+
+dn: cn=APP_USERS,ou=groups,dc=company,dc=com
+objectClass: groupOfNames
+cn: APP_USERS
+member: uid=sara,ou=users,dc=company,dc=com
